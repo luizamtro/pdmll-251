@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title><%= title %> - De Boa Viajando</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- CSS personalizado -->
+  <link rel="stylesheet" href="/stylesheets/style.css" />
+</head>
+
+<body>
+  <!-- Cabeçalho fixo -->
+  <header>
+     <nav class="navbar navbar-dark bg-dark fixed-top justify-content-center">
+    <span class="navbar-brand mb-0 h1 nome-deboa">De Boa Viajando</span>
+  </nav>
+
+    <!-- Navegação -->
+    <div class="container mt-5">
+      <div class="row text-center">
+        <div class="col">
+          <a class="nav-link <%= title === 'Inicio' ? 'ativo-link' : '' %>" href="/">Início</a>
+        </div>
+        <div class="col">
+          <a class="nav-link <%= title === 'Sobre' ? 'ativo-link' : '' %>" href="/sobre">Sobre</a>
+        </div>
+        <div class="col">
+          <a class="nav-link <%= title === 'Contato' ? 'ativo-link' : '' %>" href="/contato">Contato</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Conteúdo -->
+  <main class="container mt-4 flex-grow-1">
+    <%- body %>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="text-center py-3 mt-auto">
+    <small>&copy; <%= new Date().getFullYear() %> Minha Aplicação. Todos os direitos reservados.</small>
+  </footer>
+
+  <!-- Scripts do Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

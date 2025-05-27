@@ -1,0 +1,71 @@
+/* Navbar preta */
+.navbar {
+  background-color: #000000 !important;
+}
+
+.navbar .navbar-brand {
+  color: #ffffff;
+}
+
+/* Nome DBV */
+.nome-deboa {
+  font-family: 'Major Mono Display', monospace;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+  color: white;
+}
+
+/* Links da navbar - cinza claro */
+.nav-link {
+  color: #c2c1c1 !important;
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  color: #aaaaaa !important;
+  text-decoration: underline;
+}
+
+/* Link ativo*/
+.ativo-link {
+  color: #000000 !important;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+/* Corpo do site */
+body {
+  font-family: 'Julius Sans One', sans-serif;
+  padding-top: 80px;
+  padding-left: 0;
+  padding-right: 0;
+  background-color: #f7f7f7;
+  color: #000000;
+  min-height: 100vh;
+}
+
+/* Centralizar conteúdos */
+.centered-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  text-align: center;
+}
+
+/* Botões pretos */
+.btn-dark {
+  background-color: #000000 !important;
+  border-color: #000000 !important;
+  color: #ffffff;
+}
+
+.btn-dark:hover {
+  background-color: #333333 !important;
+  border-color: #333333 !important;
+}
+
+/* Footer fixo */
+html, body {
+  height: 100%
